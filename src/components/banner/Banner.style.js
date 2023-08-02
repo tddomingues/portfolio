@@ -32,7 +32,7 @@ export const Container = styled.header`
     background-image: url(${imgBannerMobile});
 
     & div {
-      padding: 60px 0px 60px 0px;
+      padding: 60px 20px 60px 20px;
       background-color: #151515;
       border-bottom: 20px solid #202020;
       border-top: 20px solid #202020;

@@ -112,7 +112,7 @@ export const NavLogo = styled.span`
   }
   @media screen and (max-width: 1024px) {
     & a {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
 `;
