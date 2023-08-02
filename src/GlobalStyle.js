@@ -32,6 +32,7 @@ textarea {
 
 #nav {
     z-index: 1000;
+    
 }
 
 `;

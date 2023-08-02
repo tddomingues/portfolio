@@ -19,8 +19,9 @@ export const NavItems = styled.ul`
   }
 
   & a {
+    ${flexCenterSpaceBetween};
+    justify-content: space-between;
     color: #f4f4f2;
-    
     font-size: 20px;
     padding: 6px;
     position: relative;
@@ -42,8 +43,10 @@ export const NavItems = styled.ul`
     width: 100%;
   }
 
-  & span {
+  & div {
+    ${flexCenterSpaceBetween};
     margin-right: 10px;
+    color: #2790b0;
   }
   @media screen and (max-width: 1024px) {
     display: none;
@@ -52,46 +55,49 @@ export const NavItems = styled.ul`
 
 export const ResponsiveNavItems = styled.ul`
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
   @media screen and (max-width: 1024px) {
     ${flexCenterSpaceBetween}
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-
-    animation: showNavBar 0.5s forwards;
+    animation: showNavBar 1s;
+    animation-timing-function: linear;
+    height: 300px;
 
     & li {
       padding-right: 2em;
-      border-bottom: 1px solid #D9D9D9;
-      width: 100%;
-      text-align: center;
+      border-bottom: 1px solid #969696;
     }
 
     & a {
-      color: #f4f4f2;
+      ${flexCenterSpaceBetween};
+      justify-content: space-between;
       
+      color: #f4f4f2;
       font-size: 25px;
       padding: 6px;
       position: relative;
-      
     }
 
-    & span {
+    & div {
+      ${flexCenterSpaceBetween};
       margin-right: 10px;
-      
-     
-     
+      color: #2790b0;
     }
 
     @keyframes showNavBar {
-      from {
+      0% {
         height: 0;
         visibility: hidden;
         overflow-y: hidden;
       }
 
-      to {
+      50% {
         height: 300px;
+      }
+
+      100% {    
         visibility: visible;
       }
     }
@@ -117,6 +123,7 @@ export const Nav = styled.nav`
   margin: 10px;
   padding: 10px 1em 10px 1em;
   border-radius: 30px;
+  border-bottom: 1px solid #f4f4f2;
   display: grid;
   grid-template-rows: 60px 1fr;
   grid-template-columns: auto auto;

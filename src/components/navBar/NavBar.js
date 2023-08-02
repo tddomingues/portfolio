@@ -33,33 +33,33 @@ const NavBar = () => {
         <NavItems>
           <li>
             <a href="#home">
-              <span>
+              <div>
                 <FiHome />
-              </span>
+              </div>
               Início
             </a>
           </li>
           <li>
             <a href="#aboutMe">
-              <span>
+              <div>
                 <BsPerson />
-              </span>
-              Sobre Min
+              </div>
+              Sobre Mim
             </a>
           </li>
           <li>
             <a href="#tecnology">
-              <span>
+              <div>
                 <BsPcDisplay />
-              </span>
+              </div>
               Tecnologias
             </a>
           </li>
           <li>
             <a href="#contact">
-              <span>
+              <div>
                 <BsChatRightDots />
-              </span>
+              </div>
               Contato
             </a>
           </li>
@@ -78,33 +78,33 @@ const NavBar = () => {
           <ResponsiveNavItems>
             <li>
               <a href="#home" onClick={eventScan}>
-                <span>
+                <div>
                   <FiHome />
-                </span>
+                </div>
                 Início
               </a>
             </li>
             <li>
               <a href="#aboutMe" onClick={eventScan}>
-                <span>
+                <div>
                   <BsPerson />
-                </span>
-                Sobre Min
+                </div>
+                Sobre Mim
               </a>
             </li>
             <li>
               <a href="#tecnology" onClick={eventScan}>
-                <span>
+                <div>
                   <BsPcDisplay />
-                </span>
+                </div>
                 Tecnologias
               </a>
             </li>
             <li>
               <a href="#contact" onClick={eventScan}>
-                <span>
+                <div>
                   <BsChatRightDots />
-                </span>
+                </div>
                 Contato
               </a>
             </li>
