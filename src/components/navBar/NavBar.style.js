@@ -6,7 +6,7 @@ const flexCenterSpaceBetween = `
 `;
 
 export const Container = styled.div`
-  position: fixed;
+  position: absolute;
   width: 100%;
 `;
 
@@ -58,10 +58,11 @@ export const ResponsiveNavItems = styled.ul`
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+  
 
   @media screen and (max-width: 1024px) {
     ${flexCenterSpaceBetween}
-    animation: showNavBar 1s;
+    animation: showNavBar 0.5s;
     animation-timing-function: linear;
     height: 300px;
 

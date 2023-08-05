@@ -9,7 +9,7 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-between;
   padding: 10px 1em 10px 1em;
-  border-bottom: 8px solid #E76777;
+  border-bottom: 2px solid #E76777;
 
   & span {
     color: #202020;

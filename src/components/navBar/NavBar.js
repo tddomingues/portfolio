@@ -17,11 +17,11 @@ const NavBar = () => {
   const eventScan = () => {
     setActiveMenu(!activeMenu);
 
-    if(activeMenu) {
-      document.body.style.overflow = "auto"
-    } else {
-      document.body.style.overflow = "hidden"
-    }
+    // if(activeMenu) {
+    //   document.body.style.overflow = "auto"
+    // } else {
+    //   document.body.style.overflow = "hidden"
+    // }
   };
 
   return (

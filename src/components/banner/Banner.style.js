@@ -26,6 +26,7 @@ export const Container = styled.header`
   & h1 {
     color: #f4f4f2;
     font-size: 100px;
+    text-align: center;
   }
 
   @media screen and (max-width: 576px) {

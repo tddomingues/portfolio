@@ -18,11 +18,11 @@ const About = () => {
             Prazer, meu nome é <span>Tiago</span>, tenho 25 anos, resíduo em Maringá, no Paraná, e sou apaixonado por
             tecnologia. Para manter contato com a Era Digital, abandonei o curso de Biomedicina para
             ingressar em
-             <span> Engenharia de Software </span>. Atualmente,
+             <span> Engenharia de Software</span>. Atualmente,
             dedico-me diariamente a aprimorar minhas habilidades no
             desenvolvimento Front-end, com o objetivo de ingressar no mercado de
             trabalho como
-             <span> estagiário </span>. Para que eu possa crescer
+             <span> estagiário</span>, para que eu possa crescer
             profissionalmente e colaborar em projetos.
           </TextMore>
         </TextAbout>
