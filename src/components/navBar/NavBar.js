@@ -1,5 +1,11 @@
-import { FiHome, FiX, FiMenu } from "react-icons/fi";
-import { BsPerson, BsChatRightDots, BsPcDisplay } from "react-icons/bs";
+import { FiX, FiMenu } from "react-icons/fi";
+import {
+  BsFillHouseFill,
+  BsFillPersonFill,
+  BsFillChatRightFill,
+  BsHammer,
+  BsFillCupHotFill,
+} from "react-icons/bs";
 
 import {
   Container,
@@ -34,7 +40,7 @@ const NavBar = () => {
           <li>
             <a href="#home">
               <div>
-                <FiHome />
+                <BsFillHouseFill />
               </div>
               Início
             </a>
@@ -42,7 +48,7 @@ const NavBar = () => {
           <li>
             <a href="#aboutMe">
               <div>
-                <BsPerson />
+                <BsFillPersonFill />
               </div>
               Sobre Mim
             </a>
@@ -50,15 +56,23 @@ const NavBar = () => {
           <li>
             <a href="#tecnology">
               <div>
-                <BsPcDisplay />
+                <BsHammer />
               </div>
               Tecnologias
             </a>
           </li>
           <li>
+            <a href="#project">
+              <div>
+                <BsFillCupHotFill />
+              </div>
+              Projetos
+            </a>
+          </li>
+          <li>
             <a href="#contact">
               <div>
-                <BsChatRightDots />
+                <BsFillChatRightFill />
               </div>
               Contato
             </a>
@@ -79,7 +93,7 @@ const NavBar = () => {
             <li>
               <a href="#home" onClick={eventScan}>
                 <div>
-                  <FiHome />
+                  <BsFillHouseFill />
                 </div>
                 Início
               </a>
@@ -87,7 +101,7 @@ const NavBar = () => {
             <li>
               <a href="#aboutMe" onClick={eventScan}>
                 <div>
-                  <BsPerson />
+                  <BsFillPersonFill />
                 </div>
                 Sobre Mim
               </a>
@@ -95,15 +109,23 @@ const NavBar = () => {
             <li>
               <a href="#tecnology" onClick={eventScan}>
                 <div>
-                  <BsPcDisplay />
+                  <BsHammer />
                 </div>
                 Tecnologias
               </a>
             </li>
             <li>
+              <a href="#project">
+                <div>
+                  <BsFillCupHotFill />
+                </div>
+                Projetos
+              </a>
+            </li>
+            <li>
               <a href="#contact" onClick={eventScan}>
                 <div>
-                  <BsChatRightDots />
+                  <BsFillChatRightFill />
                 </div>
                 Contato
               </a>

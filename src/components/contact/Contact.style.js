@@ -7,7 +7,7 @@ const Centralize = styled.div`
 `;
 
 export const Container = styled.section`
-  background-color: #202020;
+  background-color: #151515;
 `;
 
 export const ContentContact = styled(Centralize)`
@@ -79,7 +79,7 @@ export const ConnectiveText = styled.div`
 `;
 
 export const Form = styled.form`
-  background-color: #151515;
+  background-color: #202020;
   padding: 10px;
 
   & div {

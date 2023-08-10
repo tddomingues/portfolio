@@ -4,6 +4,7 @@ import NavBar from "./components/navBar/NavBar";
 import Tecnology from "./components/tecnology/Tecnology"
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Banner/>
       <About/>
       <Tecnology/>
+      <Projects/>
       <Contact/>
       <Footer/>
     </div>

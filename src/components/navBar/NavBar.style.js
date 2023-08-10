@@ -64,7 +64,7 @@ export const ResponsiveNavItems = styled.ul`
     ${flexCenterSpaceBetween}
     animation: showNavBar 0.5s;
     animation-timing-function: linear;
-    height: 300px;
+    height: 350px;
 
     & li {
       padding-right: 2em;
