@@ -22,7 +22,7 @@ const About = () => {
             dedico-me diariamente a aprimorar minhas habilidades no
             desenvolvimento Front-end, com o objetivo de ingressar no mercado de
             trabalho como
-             <span> estagiário</span>, para que eu possa crescer
+             <span> estagiário</span> para que eu possa crescer
             profissionalmente e colaborar em projetos.
           </TextMore>
         </TextAbout>
