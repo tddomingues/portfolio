@@ -29,6 +29,14 @@ export const Container = styled.header`
     text-align: center;
   }
 
+  @media screen and (max-width: 767px) {
+    & h1 {
+    color: #f4f4f2;
+    font-size: 50px;
+    text-align: center;
+  }
+  }
+
   @media screen and (max-width: 576px) {
     background-image: url(${imgBannerMobile});
 
@@ -41,7 +49,7 @@ export const Container = styled.header`
     }
 
     & h1 {
-      font-size: 50px;
+      
       text-align: center;
     }
   }

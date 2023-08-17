@@ -48,7 +48,7 @@ export const NavItems = styled.ul`
     margin-right: 10px;
     color: #2790b0;
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 `;
@@ -60,7 +60,7 @@ export const ResponsiveNavItems = styled.ul`
   gap: 15px;
   
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1199px) {
     ${flexCenterSpaceBetween}
     animation: showNavBar 0.5s;
     animation-timing-function: linear;
@@ -94,12 +94,13 @@ export const ResponsiveNavItems = styled.ul`
         overflow-y: hidden;
       }
 
-      50% {
+      70% {
         height: 300px;
       }
 
       100% {    
         visibility: visible;
+        
       }
     }
   }
@@ -111,7 +112,7 @@ export const NavLogo = styled.span`
     font-size: 40px;
     font-weight: bold;
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1199px) {
     & a {
       font-size: 20px;
     }
@@ -152,7 +153,7 @@ export const Nav = styled.nav`
     grid-column: 1/3;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1199px) {
     & button {
       display: flex;
     }

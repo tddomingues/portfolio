@@ -30,20 +30,68 @@ export const Container = styled.section`
 `;
 
 export const ContentTecnology = styled.div`
-  
-  max-width: 900px;
-  margin: auto;
-
   padding: 30px 1em;
 
-  & div { 
-    text-align: center;
-    background-color: #202020;
-  }
   & img {
     width: 300px;
     height: 300px;
-    padding: 20px;
-    border-top: 2px solid #fff;
   }
+`;
+
+export const Carousel = styled.div`
+  background-color: #202020;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+
+  & .btn-right,
+  .btn-left {
+    display: grid;
+    place-items: center;
+    background-color: #f4f4f241;
+    color: #2790b0;
+    font-size: 80px;
+    position: absolute;
+    top: 106px;
+  }
+
+  & .btn-right {
+    right: -40px;
+  }
+
+  & .btn-left {
+    left: -40px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 300px;
+  }
+
+  @media screen and (max-width: 576px) {
+    max-width: 300px;
+
+    & .btn-right,
+    .btn-left {
+      font-size: 60px;
+      top: 115px;
+    }
+
+    & .btn-right {
+      right: -20px;
+    }
+
+    & .btn-left {
+      left: -20px;
+    }
+  }
+`;
+
+export const Images = styled.div`
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 `;

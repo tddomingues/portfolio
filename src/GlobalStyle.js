@@ -21,6 +21,7 @@ button,
 input[type="submit"] {
     border: none;
     cursor: pointer;
+    outline: none;
 }
 
 input,

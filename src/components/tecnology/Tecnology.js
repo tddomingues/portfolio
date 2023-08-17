@@ -1,17 +1,29 @@
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Container,
+  ContentTecnology,
+  Carousel,
+  Images,
+} from "./Tecnology.style";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useRef } from "react";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-
-import { Container, ContentTecnology } from "./Tecnology.style";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 const Tecnology = () => {
+  const carousel = useRef(null);
+
+  const handleAdvanceRight = (e) => {
+    e.preventDefault()
+
+    //carousel.current.scrollLeft += carousel.current.offsetWidth;
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  };
+
+  const handleAdvanceLeft = (e) => {
+    e.preventDefault()
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  };
+
   return (
     <Container id="tecnology">
       <h2>
@@ -19,64 +31,57 @@ const Tecnology = () => {
       </h2>
       <p>Veja as ferramentes que fazem parte do meu dia a dia.</p>
       <ContentTecnology>
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50}
-          slidesPerView={1}
-          // navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-        >
-          <div>
-            <SwiperSlide>
+        <Carousel>
+          <Images ref={carousel}>
+            <div>
               <img
-               
                 src="https://img.icons8.com/fluency/240/html-5.png"
                 alt="html-5"
               />
-            </SwiperSlide>
+            </div>
 
-            <SwiperSlide>
+            <div>
               <img
-                
                 src="https://img.icons8.com/fluency/240/css3.png"
                 alt="css3"
               />
-            </SwiperSlide>
+            </div>
 
-            <SwiperSlide>
+            <div>
               <img
-               
                 src="https://img.icons8.com/color/240/javascript--v1.png"
                 alt="javascript--v1"
               />
-            </SwiperSlide>
+            </div>
 
-            <SwiperSlide>
+            <div>
               <img
-               
                 src="https://img.icons8.com/ultraviolet/240/react--v1.png"
                 alt="react--v1"
               />
-            </SwiperSlide>
+            </div>
 
-            <SwiperSlide>
+            <div>
               <img
-               
                 src="https://img.icons8.com/color/240/firebase.png"
                 alt="firebase"
               />
-            </SwiperSlide>
+            </div>
 
-            <SwiperSlide>
+            <div>
               <img
-                
                 src="https://img.icons8.com/color/240/salesforce.png"
                 alt="salesforce"
               />
-            </SwiperSlide>
-          </div>
-        </Swiper>
+            </div>
+          </Images>
+          <button onClick={handleAdvanceRight} className="btn-right">
+            <BsChevronCompactRight />
+          </button>
+          <button onClick={handleAdvanceLeft} className="btn-left">
+            <BsChevronCompactLeft />
+          </button>
+        </Carousel>
       </ContentTecnology>
     </Container>
   );

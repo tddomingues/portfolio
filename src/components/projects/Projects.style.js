@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+//importando o estilo do "Carousel" da pages tecnology
+import {Carousel} from "../tecnology/Tecnology.style"
+
 export const Container = styled.section`
   background-color: #202020;
 
@@ -30,8 +33,6 @@ export const Container = styled.section`
 `;
 
 export const ContentProject = styled.div`
-  max-width: 900px;
-  margin: auto;
   padding: 30px 1em;
 
   & div {
@@ -40,7 +41,7 @@ export const ContentProject = styled.div`
   }
 
   & img {
-    width: 100%;
+    width: 900px;
     padding: 20px;
   }
 
@@ -48,5 +49,35 @@ export const ContentProject = styled.div`
     color: #f4f4f2;
     background-color: #151515;
     padding-bottom: 10px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    & img {
+      width: 600px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    & img {
+      width: 300px;
+    }
+  }
+`;
+
+export const CarouselProject = styled(Carousel)`
+  & .btn-right,
+  .btn-left {
+    top: 180px;
+  }
+`;
+
+export const ListProjects = styled.div`
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  h5 {
+    padding-top: 10px;
+    color: #e76777;
+    font-size: 30px;
   }
 `;
