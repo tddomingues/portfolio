@@ -44,6 +44,10 @@ export const Carousel = styled.div`
   margin: auto;
   position: relative;
 
+  & ::-webkit-scrollbar {
+    display: none;
+  }
+
   & .btn-right,
   .btn-left {
     display: grid;
