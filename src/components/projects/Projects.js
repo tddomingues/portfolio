@@ -3,6 +3,7 @@ import {
   ContentProject,
   ListProjects,
   CarouselProject,
+  BoxProject,
 } from "./Projects.style.js";
 
 import projetoCinebase from "../../assets/projetoCinebase.png";
@@ -32,20 +33,32 @@ const Projects = () => {
       <ContentProject>
         <CarouselProject>
           <ListProjects ref={carousel}>
-            <div>
+            <BoxProject>
               <h5>Cinebase</h5>
-              <a href="https://github.com/tddomingues/cinebase">
-                <img src={projetoCinebase} alt="Projeto Cinebase" />
-                <p>React.js - Styled Component - API TMDB</p>
-              </a>
-            </div>
-            <div>
+              <img src={projetoCinebase} alt="Projeto Cinebase" />
+              <p>React.js - Styled Component - API TMDB</p>
+              <div>
+                <a href="https://cinebase-bay.vercel.app/">
+                  <span>Visite</span>
+                </a>
+                <a href="https://github.com/tddomingues/cinebase">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </BoxProject>
+            <BoxProject>
               <h5>To - Do List</h5>
-              <a href="https://github.com/tddomingues/todo_servidor">
-                <img src={projetoTodo} alt="Projeto Todo" />
-                <p>React.js - Styled Component - Firebase</p>
-              </a>
-            </div>
+              <img src={projetoTodo} alt="Projeto Todo" />
+              <p>React.js - Styled Component - Firebase</p>
+              <div>
+                <a href="https://todolistfirebase-kappa.vercel.app/">
+                  <span>Visite</span>
+                </a>
+                <a href="https://github.com/tddomingues/todo_servidor">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </BoxProject>
           </ListProjects>
 
           <button onClick={handleAdvanceRight} className="btn-right">

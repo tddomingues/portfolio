@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 //importando o estilo do "Carousel" da pages tecnology
-import {Carousel} from "../tecnology/Tecnology.style"
+import { Carousel } from "../tecnology/Tecnology.style";
 
 export const Container = styled.section`
   background-color: #202020;
@@ -75,9 +75,30 @@ export const ListProjects = styled.div`
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
+
   h5 {
     padding-top: 10px;
     color: #e76777;
     font-size: 30px;
+  }
+`;
+
+export const BoxProject = styled.div`
+  
+  & a {
+    color: #F4F4F2;
+  }
+
+  & div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0px 20px 0px;
+  }
+
+  & div span {
+    background-color: #202020;
+   padding: 10px;
+    color: #F4F4F2;
   }
 `;
