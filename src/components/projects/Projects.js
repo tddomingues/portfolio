@@ -27,7 +27,7 @@ const Projects = () => {
   return (
     <Container id="project">
       <h2>
-        <span>|</span> PROJETOS
+      <span>&lt;h2&gt;</span><br/> PROJETOS <br/><span>&lt;/h2&gt;</span>
       </h2>
       <p>Veja alguns projetos de aprendizados.</p>
       <ContentProject>

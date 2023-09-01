@@ -56,7 +56,9 @@ export const Carousel = styled.div`
     color: #2790b0;
     font-size: 80px;
     position: absolute;
-    top: 106px;
+    
+    top: 36%;
+    
   }
 
   & .btn-right {

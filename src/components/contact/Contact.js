@@ -14,7 +14,7 @@ const Contact = () => {
     <Container id="contact">
       <ContentContact>
         <h2>
-          <span>|</span> CONTATO
+        <span>&lt;h2&gt;</span><br/> CONTATO <br/><span>&lt;/h2&gt;</span>
         </h2>
         <p>
           Para vagas de estágio em <span>Front-end</span>.
@@ -24,7 +24,7 @@ const Contact = () => {
             <div>
               <HiOutlinePhone />
             </div>
-            <span>(44) 991289-9326</span>
+            <span>(44) 99128-9326</span>
           </Icon>
           <Icon>
             <div>

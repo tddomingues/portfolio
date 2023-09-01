@@ -62,9 +62,11 @@ export const ResponsiveNavItems = styled.ul`
 
   @media screen and (max-width: 1199px) {
     ${flexCenterSpaceBetween}
-    animation: showNavBar 0.5s;
+    animation: showNavBar .4s;
     animation-timing-function: linear;
     height: 350px;
+    white-space: nowrap;
+    overflow: hidden;
 
     & li {
       padding-right: 2em;
@@ -90,17 +92,10 @@ export const ResponsiveNavItems = styled.ul`
     @keyframes showNavBar {
       0% {
         height: 0;
-        visibility: hidden;
-        overflow-y: hidden;
-      }
-
-      70% {
-        height: 300px;
       }
 
       100% {    
-        visibility: visible;
-        
+        height: 350px;
       }
     }
   }

@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Container id="aboutMe">
       <h2>
-        <span>|</span> SOBRE MIM
+        <span>&lt;h2&gt;</span><br/> SOBRE MIM <br/><span>&lt;/h2&gt;</span>
       </h2>
       <ContentAbout>
         <PerfilPhoto></PerfilPhoto>

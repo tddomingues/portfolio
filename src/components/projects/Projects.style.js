@@ -67,7 +67,7 @@ export const ContentProject = styled.div`
 export const CarouselProject = styled(Carousel)`
   & .btn-right,
   .btn-left {
-    top: 230px;
+    top: 40%;
   }
 `;
 

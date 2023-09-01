@@ -27,7 +27,7 @@ const Tecnology = () => {
   return (
     <Container id="tecnology">
       <h2>
-        <span>|</span> TECNOLOGIAS
+      <span>&lt;h2&gt;</span><br/> TECNOLOGIAS <br/><span>&lt;/h2&gt;</span>
       </h2>
       <p>Veja as ferramentes que fazem parte do meu dia a dia.</p>
       <ContentTecnology>
