@@ -8,6 +8,7 @@ import {
 
 import projetoCinebase from "../../assets/projetoCinebase.png";
 import projetoTodo from "../../assets/projetoTodo.png";
+import projetoNexGen from "../../assets/nexgen.png";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 import { useRef } from "react";
@@ -42,6 +43,19 @@ const Projects = () => {
                   <span>Visite</span>
                 </a>
                 <a href="https://github.com/tddomingues/cinebase">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </BoxProject>
+            <BoxProject>
+              <h5>NexGen Software</h5>
+              <img src={projetoNexGen} alt="Projeto Todo" />
+              <p>React.js - Styled Component</p>
+              <div>
+                <a href="https://nexgen-git-main-tddomingues.vercel.app/">
+                  <span>Visite</span>
+                </a>
+                <a href="https://github.com/tddomingues/nexgen">
                   <span>GitHub</span>
                 </a>
               </div>
