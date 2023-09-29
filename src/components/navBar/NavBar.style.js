@@ -55,18 +55,24 @@ export const NavItems = styled.ul`
 
 export const ResponsiveNavItems = styled.ul`
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-  
 
   @media screen and (max-width: 1199px) {
-    ${flexCenterSpaceBetween}
-    animation: showNavBar .4s;
-    animation-timing-function: linear;
-    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     white-space: nowrap;
     overflow: hidden;
+    transition: 0.4s;
+    gap: 15px;
+    
+    &.open-menu {
+      height: 350px;
+    }
+
+    &.closed-menu {
+      height: 0px;
+    }
 
     & li {
       padding-right: 2em;
@@ -76,7 +82,7 @@ export const ResponsiveNavItems = styled.ul`
     & a {
       ${flexCenterSpaceBetween};
       justify-content: space-between;
-      
+
       color: #f4f4f2;
       font-size: 25px;
       padding: 6px;
@@ -87,16 +93,6 @@ export const ResponsiveNavItems = styled.ul`
       ${flexCenterSpaceBetween};
       margin-right: 10px;
       color: #2790b0;
-    }
-
-    @keyframes showNavBar {
-      0% {
-        height: 0;
-      }
-
-      100% {    
-        height: 350px;
-      }
     }
   }
 `;

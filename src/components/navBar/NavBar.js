@@ -78,6 +78,7 @@ const NavBar = () => {
             </a>
           </li>
         </NavItems>
+
         {!activeMenu && (
           <button onClick={eventScan}>
             <FiMenu />
@@ -88,50 +89,49 @@ const NavBar = () => {
             <FiX />
           </button>
         )}
-        {activeMenu && (
-          <ResponsiveNavItems>
-            <li>
-              <a href="#home" onClick={eventScan}>
-                <div>
-                  <BsFillHouseFill />
-                </div>
-                Início
-              </a>
-            </li>
-            <li>
-              <a href="#aboutMe" onClick={eventScan}>
-                <div>
-                  <BsFillPersonFill />
-                </div>
-                Sobre Mim
-              </a>
-            </li>
-            <li>
-              <a href="#tecnology" onClick={eventScan}>
-                <div>
-                  <BsHammer />
-                </div>
-                Tecnologias
-              </a>
-            </li>
-            <li>
-              <a href="#project">
-                <div>
-                  <BsFillCupHotFill />
-                </div>
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={eventScan}>
-                <div>
-                  <BsFillChatRightFill />
-                </div>
-                Contato
-              </a>
-            </li>
-          </ResponsiveNavItems>
-        )}
+
+        <ResponsiveNavItems className={activeMenu ? "open-menu" : "closed-menu"}>
+          <li>
+            <a href="#home" onClick={eventScan}>
+              <div>
+                <BsFillHouseFill />
+              </div>
+              Início
+            </a>
+          </li>
+          <li>
+            <a href="#aboutMe" onClick={eventScan}>
+              <div>
+                <BsFillPersonFill />
+              </div>
+              Sobre Mim
+            </a>
+          </li>
+          <li>
+            <a href="#tecnology" onClick={eventScan}>
+              <div>
+                <BsHammer />
+              </div>
+              Tecnologias
+            </a>
+          </li>
+          <li>
+            <a href="#project" onClick={eventScan}>
+              <div>
+                <BsFillCupHotFill />
+              </div>
+              Projetos
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={eventScan}>
+              <div>
+                <BsFillChatRightFill />
+              </div>
+              Contato
+            </a>
+          </li>
+        </ResponsiveNavItems>
       </Nav>
     </Container>
   );
