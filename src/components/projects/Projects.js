@@ -39,7 +39,7 @@ const Projects = () => {
               <img src={projetoCinebase} alt="Projeto Cinebase" />
               <p>React.js - Styled Component - API TMDB</p>
               <div>
-                <a href="https://cinebase-bay.vercel.app/">
+                <a href="https://cinebase-five.vercel.app/">
                   <span>Visite</span>
                 </a>
                 <a href="https://github.com/tddomingues/cinebase">
