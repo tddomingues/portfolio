@@ -7,7 +7,7 @@ import {
 } from "./Projects.style.js";
 
 import projetoCinebase from "../../assets/projetoCinebase.png";
-import projetoTodo from "../../assets/projetoTodo.png";
+import projetoTodo from "../../assets/projetoOrganize.png";
 import projetoNexGen from "../../assets/nexgen.png";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
@@ -61,14 +61,14 @@ const Projects = () => {
               </div>
             </BoxProject>
             <BoxProject>
-              <h5>To - Do List</h5>
+              <h5>Gerenciador de Tarefas - Organize</h5>
               <img src={projetoTodo} alt="Projeto Todo" />
-              <p>React.js - Styled Component - Firebase</p>
+              <p>React.js - Styled Component - Mongodb - Nodejs - Express</p>
               <div>
-                <a href="https://todolistfirebase-kappa.vercel.app/">
+                {/* <a href="https://todolistfirebase-kappa.vercel.app/">
                   <span>Visite</span>
-                </a>
-                <a href="https://github.com/tddomingues/todo_servidor">
+                </a> */}
+                <a href="https://github.com/tddomingues/fullstack-lista-de-tarefas">
                   <span>GitHub</span>
                 </a>
               </div>
